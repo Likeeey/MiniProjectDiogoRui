@@ -66,3 +66,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  display: flex;
+  color: green;
+  font-size: 2em;
+}
+
+.navbar img {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
