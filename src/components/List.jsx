@@ -21,10 +21,11 @@ function DisplayAparts () {
                     return (
                         <div key={apartment.id}>
                             <img src={apartment.picture_url.url}/>
-                            <p>{apartment.beds}</p>
-                            <p>{apartment.bedrooms}</p>
-                            <p>{apartment.country}</p>
-                            <p>{apartment.city}</p>
+                            <p>Beds: {apartment.beds}</p>
+                            <p>Bedrooms: {apartment.bedrooms}</p>
+                            <p>Country: {apartment.country}</p>
+                            <p>City: {apartment.city}</p>
+                            <p>Price: {apartment.price}€</p>
                             {apartment.price <= 60 && 
                                 <p>Low Price</p>
                             }
