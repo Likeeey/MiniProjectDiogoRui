@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
+import apartments from '../Data/rentals.json'
 
 
-
-function ApartmentsDetails (props) {
-    const [apartmentId] = useParams();
-    const [apartments] = props;
+function ApartmentsDetails () {
+    const {apartmentId} = useParams();
+/*     const {apartments} = props; */
 
     const foundApartments = apartments.find((apartment) => {
         return apartment.id == apartmentId;

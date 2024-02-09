@@ -21,7 +21,7 @@ function DisplayAparts () {
                 {aparts.map((apartment) => {
                     return (
                         <div key={apartment.id}>
-                            <Link to={`apartments/${apartList.id}`}> <img src={apartment.picture_url.url}/> </Link>
+                            <Link to={`apartments/${apartment.id}`}> <img src={apartment.picture_url.url}/> </Link>
                             <p>Name: {apartment.name}</p>
                             <p>Price: {apartment.price}</p>
 
