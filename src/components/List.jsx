@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import apartList from '../Data/rentals.json'
+import { Link } from 'react-router-dom';
 
 function DisplayAparts () {
     const [aparts, setAparts] = useState(apartList);
@@ -20,19 +21,17 @@ function DisplayAparts () {
                 {aparts.map((apartment) => {
                     return (
                         <div key={apartment.id}>
-                            <img src={apartment.picture_url.url}/>
-                            <p>Beds: {apartment.beds}</p>
-                            <p>Bedrooms: {apartment.bedrooms}</p>
-                            <p>Country: {apartment.country}</p>
-                            <p>City: {apartment.city}</p>
-                            <p>Price: {apartment.price}€</p>
-                            {apartment.price <= 60 && 
+                            <Link to={`apartments/${apartList.id}`}> <img src={apartment.picture_url.url}/> </Link>
+                            <p>Name: {apartment.name}</p>
+                            <p>Price: {apartment.price}</p>
+
+                            {apartment.price < 60 && 
                                 <p>Low Price</p>
                             }
-                            {apartment.price <= 90 &&
+                            {(apartment.price >= 60 && apartment.price < 100)  &&
                                 <p>Average Price</p>
                             }
-                            {apartment.price > 90 &&
+                            {apartment.price >= 100 &&
                                 <p>Premium Price</p>
                             }
 

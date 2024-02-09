@@ -1,16 +1,22 @@
 import './App.css'
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Sidebar from './components/Sidebar';
 import List from './components/List'
+import {Routes, Route} from "react-router-dom";
+import DashBoard from './Pages/DashBoardPage';
+import HomePage from './components/HomePage';
+import ApartmentsDetails from './Pages/ItensDetailsPlan';
+import apartList from './Data/rentals.json'
+
+
 
 function App() {
   return (
   <div>
-    <Navbar />
-    <Footer />
-    <Sidebar />
-    <List />
+    <div>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/apartList/apartList.id' element={<ApartmentsDetails apartList = {apartList}/>} />
+      </Routes>
+    </div>
   </div>
   )
 }
