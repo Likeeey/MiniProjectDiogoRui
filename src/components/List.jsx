@@ -3,7 +3,7 @@ import apartList from '../Data/rentals.json'
 import { Link } from 'react-router-dom';
 
 function DisplayAparts () {
-    const [aparts, setAparts] = useState(apartList);
+    const [aparts, setAparts] = useState(   );
 
         function deleteList (apartmentid) {
             let filterList = aparts.filter((apart) => {
