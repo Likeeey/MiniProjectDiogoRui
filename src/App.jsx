@@ -5,6 +5,8 @@ import DashBoard from './Pages/DashBoardPage';
 import HomePage from './components/HomePage';
 import ApartmentsDetails from './Pages/ItensDetailsPlan';
 import apartList from './Data/rentals.json'
+import About from './Pages/AboutPage';
+import Error from './Pages/NotFoundPage'
 
 
 
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/apartments/:apartmentId' element={<ApartmentsDetails/>/*  apartments = {apartList} */} />
+        <Route path='/about' element = {<About />}/>
+        <Route path='*' element = {<Error/>}/>
       </Routes>
     </div>
   </div>

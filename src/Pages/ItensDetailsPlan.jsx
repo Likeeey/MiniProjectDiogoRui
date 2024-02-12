@@ -1,5 +1,8 @@
 import { useParams } from "react-router-dom";
-import apartments from '../Data/rentals.json'
+import apartments from '../Data/rentals.json';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Sidebar from '../components/Sidebar';
 
 
 function ApartmentsDetails () {
@@ -11,6 +14,10 @@ function ApartmentsDetails () {
     }) 
 
     return (
+        <div>
+            <Navbar />
+            <Footer />
+            <Sidebar />
         <section>
             {
                 foundApartments ? (<div>
@@ -26,6 +33,7 @@ function ApartmentsDetails () {
                 
             }
         </section>
+        </div>
     );
 }
 
