@@ -24,7 +24,7 @@ function ApartmentsDetails () {
                     <p>Country: {foundApartments.country}</p>
                     <p>City: {foundApartments.city}</p>
                     <p>Country: {foundApartments.country}</p>
-                    <p>Description: {foundApartments.Description}</p>
+                    <p>Description: {foundApartments.description}</p>
                     <p>Host: {foundApartments.host_name}</p>
                     <p>Property Type: {foundApartments.property_type}</p>
                     <p>Number of Beds: {foundApartments.beds}</p>

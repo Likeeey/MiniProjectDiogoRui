@@ -3,7 +3,7 @@ import apartList from '../Data/rentals.json'
 import { Link } from 'react-router-dom';
 
 function DisplayAparts () {
-    const [aparts, setAparts] = useState(   );
+    const [aparts, setAparts] = useState(apartList);
 
         function deleteList (apartmentid) {
             let filterList = aparts.filter((apart) => {
@@ -21,7 +21,7 @@ function DisplayAparts () {
                 {aparts.map((apartment) => {
                     return (
                         <div key={apartment.id}>
-                            <Link to={`apartments/${apartment.id}`}> <img src={apartment.picture_url.url}/> </Link>
+                            <Link to={`apartments/${apartment.id}`}> <img src={apartment.picture_url.url}/></Link>
                             <p>Name: {apartment.name}</p>
                             <p>Price: {apartment.price}</p>
 
