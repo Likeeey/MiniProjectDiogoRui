@@ -22,8 +22,8 @@ function AddApartments (props) {
         setDescription("");
         setHost("");
         setPropertyType("");
-        setBeds("");
-        setPrice("");
+        setBeds(0);
+        setPrice(0);
 
         console.log(newApartment);
     }

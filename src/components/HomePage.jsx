@@ -2,7 +2,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
 import List from "./List"
-import AddApartments from './AddApartments'
+/* import AddApartments from './AddApartments' */
 import ApartmentList from './ApartmentList'
 
 function HomePage () {
@@ -12,7 +12,7 @@ function HomePage () {
             <ApartmentList />
             <Footer />
             <Sidebar />
-            <List />
+            {/* <List /> */}
         </div>
     )
 }
