@@ -13,11 +13,8 @@ function ApartmentList() {
 
     return (
        <div>
-        <h2>Apartment List</h2>
+        <h2>Add Apartment</h2>
         <AddApartment addNewAppartment={addNewAppartment} />
-        {apartment.map((apartment) => {
-            return <Details key={apartment.id} apartment={apartment} />
-        })}
        </div> 
     )
 }

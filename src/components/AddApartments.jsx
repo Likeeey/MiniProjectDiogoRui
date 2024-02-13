@@ -14,7 +14,7 @@ function AddApartments (props) {
         e.preventDefault();
 
         const newApartment = {country, city, description, host, propertyType, beds, price};
-
+        console.log(newApartment);
         props.addNewAppartment(newApartment);
 
         setCountry("");
@@ -24,6 +24,8 @@ function AddApartments (props) {
         setPropertyType("");
         setBeds("");
         setPrice("");
+
+        console.log(newApartment);
     }
 
     return (
@@ -58,7 +60,7 @@ function AddApartments (props) {
                 </label>
                 <input type="number" name="price" value={price} onChange={(e) => setPrice(e.target.value)}/>
 
-                <button type="submit">Add apartment</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
     )
