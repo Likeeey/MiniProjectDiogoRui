@@ -16,7 +16,7 @@ function ApartmentList() {
        <div>
         <h2>Add Apartment</h2>
         <AddApartment addNewAppartment={addNewAppartment} />
-        <List apartment = {updatedApartments}/>
+        <List apartment = {apartment}/>
        </div> 
     )
 }
