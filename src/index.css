@@ -69,12 +69,25 @@ button:focus-visible {
 
 .navbar {
   display: flex;
-  color: green;
   font-size: 2em;
+  background-color: rgb(25, 33, 41);
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 1400px;
+  margin: 0px auto;
+  position: relative;
+  margin-bottom: 0px;
 }
 
 .navbar img {
-  position: fixed;
-  right: 0;
-  top: 0;
+  margin-left: auto;
+  height: auto;
+  width: 200px;
+}
+
+.navbar h3 {
+  color: yellow;
+  margin: 0;
 }

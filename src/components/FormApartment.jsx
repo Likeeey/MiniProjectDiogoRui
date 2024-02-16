@@ -1,23 +1,19 @@
-import { useState } from "react";
+import { useState } from "react"
 
-function AddApartments (props) {
+function FormApartments (props) {
     const [name, setName] = useState("");
     const [price, setPrice] = useState(0);
-    
+
 
     function handleSubmit(e) {
         
         e.preventDefault();
 
         const newApartment = {name, price};
-        console.log(newApartment);
-        props.addNewAppartment(newApartment);
+        props.addNewApartment(newApartment);
 
         setName("");
         setPrice(0);
-        
-
-        console.log(newApartment);
     }
 
     return (
@@ -30,12 +26,12 @@ function AddApartments (props) {
                 <label>
                     Price
                 </label>
-                <input type="text" name="price" value={price} onChange={(e) => setPrice(e.target.value)}/>
-                
+                <input type="number" name="price" value={price} onChange={(e) => setPrice(e.target.value)}/>
+
                 <button type="submit">Submit</button>
             </form>
         </section>
     )
 }
 
-export default AddApartments;
+export default FormApartments;

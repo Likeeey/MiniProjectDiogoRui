@@ -1,6 +1,6 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-function Error () {
+function PageNotFound () {
     return (
         <section>
             <p>Oops... Page not found.</p>
@@ -9,4 +9,4 @@ function Error () {
     )
 }
 
-export default Error;
+export default PageNotFound;

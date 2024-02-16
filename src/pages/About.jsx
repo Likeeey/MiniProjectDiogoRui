@@ -1,13 +1,13 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Sidebar from '../components/Sidebar';
+import Navbar from '../components/NavBar'
+import Sidebar from '../components/Sidebar'
+import Footer from '../components/Footer'
 
-function About () {
+function AboutPage () {
     return (
         <div>
             <Navbar />
-            <Footer />
             <Sidebar />
+            <Footer />
         <section>
             <p>This is a project where you can search for apartments and choose which one you like and removed the ones you don't!</p>
             <h4>Made by Diogo Coelho & Rui Marques</h4>
@@ -18,4 +18,4 @@ function About () {
     )
 }
 
-export default About
+export default AboutPage
