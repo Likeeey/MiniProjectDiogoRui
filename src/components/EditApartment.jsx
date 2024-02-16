@@ -15,12 +15,12 @@ function EditApartment (props) {
     const [beds, setBeds] = useState(0);
     const [price, setPrice] = useState(0);
 
-    const {apartmentId} = props;
+    const {id} = props;
 
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`${url}/apartments/${apartmentId}`)
+        axios.get(`${url}/apartments/${id}`)
         .then((response) => {
             setCountry(response.data.country);
             setCity(response.data.city);
@@ -39,8 +39,9 @@ function EditApartment (props) {
         e.preventDefault();
 
         const data = {country, city, description, host, propertyType, beds, price}
+        console.log(data)
 
-        axios.put(`${url}/apartments/${apartmentId}`, data)
+        axios.put(`${url}/apartments/${id}`, data)
         .then(() => {
             navigate("/");
         })
