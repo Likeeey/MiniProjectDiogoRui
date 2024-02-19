@@ -1,6 +1,6 @@
 function Footer () {
     return (
-        <footer>
+        <footer className="footer">
             <div>
                 <p>Find us! <a href="https://github.com/Likeeey/MiniProjectDiogoRui">Git Repository</a></p>
             </div>

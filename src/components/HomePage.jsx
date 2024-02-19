@@ -29,12 +29,14 @@ function HomePage () {
         <div>
             <Navbar />
             <Sidebar />
-            <Footer />
         <section>
             <h2>Add Apartment</h2>
             <Form addNewApartment={addNewApartment}/>
             <ApartmentList DeleteList={DeleteList} apartment={apartment}/>
         </section>
+        <div>
+            <Footer />
+        </div>
         </div>
     )
 }

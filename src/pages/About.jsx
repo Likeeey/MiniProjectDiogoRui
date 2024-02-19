@@ -4,8 +4,9 @@ import Footer from '../components/Footer'
 
 function AboutPage () {
     return (
-        <div>
+        <div className='navbarabout'>
             <Navbar />
+        <div>
             <Sidebar />
             <Footer />
         <section>
@@ -14,6 +15,7 @@ function AboutPage () {
             <h5>Diogo Coelho<a href='https://www.linkedin.com/in/diogo-coelho-9360a9268/'> LinkedIn</a><a href='https://github.com/DiogoCoelho98'> GitHub</a></h5>
             <h5>Rui Marques<a href='https://www.linkedin.com/in/rui-marques-873667163/'> LinkedIn</a><a href='https://github.com/Likeeey'> GitHub</a></h5>
         </section>
+        </div>
         </div>
     )
 }

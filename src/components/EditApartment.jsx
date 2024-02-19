@@ -43,7 +43,7 @@ function EditApartment (props) {
 
         axios.put(`${url}/apartments/${id}`, data)
         .then(() => {
-            navigate("/");
+            navigate("/apartments/:apartmentId");
         })
         .catch((error) => {
             console.log(error);

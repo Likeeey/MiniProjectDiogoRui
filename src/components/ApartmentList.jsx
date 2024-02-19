@@ -16,7 +16,7 @@ function ApartmentList (props) {
                 <div key={apartment.id}>
                     <img style={{width: "100px"}}src={apartment.picture_url}/>
                     <Link to={`apartments/${apartment.id}`}><p>Name: {apartment.name}</p></Link>
-                    <p>Price: {apartment.price}</p>
+                    <p>Price: {apartment.price}$</p>
 
                     {apartment.price < 60 && 
                         <p>Low Price</p>
